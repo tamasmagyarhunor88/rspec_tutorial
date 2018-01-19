@@ -6,10 +6,6 @@ RSpec.describe Bowling, "#score" do
       bowling = Bowling.new
       20.times { bowling.hit(4) }
       expect(bowling.score).to eq 80
-
-      20.times { bowling.hit(4) }
-      expect(bowling.score).to eq 160
-
     end
 
     it "sums the pin count again" do
